@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zdztYE7nEeigxNVUNE6FFg" name="ZQC">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ziA38E7nEeigxNVUNE6FFg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_zd5M8E7nEeigxNVUNE6FFg" name="ZookeeperQueueC">
+    <region xmi:type="uml:Region" xmi:id="_zd6bEE7nEeigxNVUNE6FFg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_PgYAQE7oEeigxNVUNE6FFg" source="__edb0E7nEeigxNVUNE6FFg" target="_BlKCkE7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TmAY4E7oEeigxNVUNE6FFg" source="_BlKCkE7oEeigxNVUNE6FFg" target="_DNOzoE7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_XBV3UE7oEeigxNVUNE6FFg" name="YES" source="_DNOzoE7oEeigxNVUNE6FFg" target="_B77j0E7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_n-D3IE7oEeigxNVUNE6FFg" name="NO" source="_DNOzoE7oEeigxNVUNE6FFg" target="_BlKCkE7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_2SgXsE7pEeigxNVUNE6FFg" source="_GuwZoE7oEeigxNVUNE6FFg" target="_H_Xs8E7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-O8CwE7pEeigxNVUNE6FFg" source="_H_Xs8E7oEeigxNVUNE6FFg" target="_JLoEsE7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Fa_ZwE7qEeigxNVUNE6FFg" source="_83rm0E7nEeigxNVUNE6FFg" target="__edb0E7nEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_K6Gt0E7qEeigxNVUNE6FFg" source="_B77j0E7oEeigxNVUNE6FFg" target="_IcVq4E7qEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_S4_P8E7qEeigxNVUNE6FFg" name="YES" source="_IcVq4E7qEeigxNVUNE6FFg" target="_GuwZoE7oEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_U2NKkE7qEeigxNVUNE6FFg" name="NO" source="_IcVq4E7qEeigxNVUNE6FFg" target="_B77j0E7oEeigxNVUNE6FFg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_83rm0E7nEeigxNVUNE6FFg" name="start"/>
+      <subvertex xmi:type="uml:State" xmi:id="__edb0E7nEeigxNVUNE6FFg" name="init"/>
+      <subvertex xmi:type="uml:State" xmi:id="_BlKCkE7oEeigxNVUNE6FFg" name="queue_state"/>
+      <subvertex xmi:type="uml:State" xmi:id="_B77j0E7oEeigxNVUNE6FFg" name="queue_status"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_DNOzoE7oEeigxNVUNE6FFg" name="root_exist" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_GuwZoE7oEeigxNVUNE6FFg" name="Delete/Sort"/>
+      <subvertex xmi:type="uml:State" xmi:id="_H_Xs8E7oEeigxNVUNE6FFg" name="Freeing StringVector"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_JLoEsE7oEeigxNVUNE6FFg" name="FinalState1"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_IcVq4E7qEeigxNVUNE6FFg" name="Node Exist" kind="choice"/>
+    </region>
+  </packagedElement>
+</uml:Model>

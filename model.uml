@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_mzA5IE8QEeigxNVUNE6FFg" name="model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_m2GpYE8QEeigxNVUNE6FFg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_mzJcAE8QEeigxNVUNE6FFg" name="WaitingQueueState">
+    <region xmi:type="uml:Region" xmi:id="_mzKDEE8QEeigxNVUNE6FFg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_-9bOsE8QEeigxNVUNE6FFg" name="PREDECESSOR_FOUND" source="_r_N4QE8QEeigxNVUNE6FFg" target="_2k4PYE8QEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="__3XHYE8QEeigxNVUNE6FFg" source="_qlLjME8QEeigxNVUNE6FFg" target="_r_N4QE8QEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_RxZEAE8REeigxNVUNE6FFg" name="else" source="_2k4PYE8QEeigxNVUNE6FFg" target="_PZf_kE8REeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TVZ0cE8REeigxNVUNE6FFg" name="PREDECESSOR_DISAPPEARED" source="_PZf_kE8REeigxNVUNE6FFg" target="_r_N4QE8QEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_YiouUE8REeigxNVUNE6FFg" source="_PZf_kE8REeigxNVUNE6FFg" target="_Ub1RAE8REeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_gPd3IE8REeigxNVUNE6FFg" name="zkWatch(predecessor_watch).DeletedEvent" source="_Ub1RAE8REeigxNVUNE6FFg" target="_r_N4QE8QEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pcr0oE8REeigxNVUNE6FFg" name="=NULL" source="_2k4PYE8QEeigxNVUNE6FFg" target="_ivrxIE8REeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qa2GAE8REeigxNVUNE6FFg" name="=my_uuid" source="_2k4PYE8QEeigxNVUNE6FFg" target="_kaiwcE8REeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_JfGBME8SEeigxNVUNE6FFg" source="_IcNn4E8SEeigxNVUNE6FFg" target="_qlLjME8QEeigxNVUNE6FFg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_qlLjME8QEeigxNVUNE6FFg" name="entering queue"/>
+      <subvertex xmi:type="uml:State" xmi:id="_r_N4QE8QEeigxNVUNE6FFg" name="finding predecessor"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_2k4PYE8QEeigxNVUNE6FFg" name="predecessor" kind="choice"/>
+      <subvertex xmi:type="uml:State" xmi:id="_PZf_kE8REeigxNVUNE6FFg" name="checking predecessor "/>
+      <subvertex xmi:type="uml:State" xmi:id="_Ub1RAE8REeigxNVUNE6FFg" name="waiting predecessor watch "/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_ivrxIE8REeigxNVUNE6FFg" name="Terminate1" kind="terminate"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_kaiwcE8REeigxNVUNE6FFg" name="FinalState1"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_IcNn4E8SEeigxNVUNE6FFg" name="Initial1"/>
+    </region>
+  </packagedElement>
+</uml:Model>

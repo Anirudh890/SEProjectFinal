@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_UWFt0E7vEeigxNVUNE6FFg" name="AssignTask">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_UZGlkE7vEeigxNVUNE6FFg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_UWOQsE7vEeigxNVUNE6FFg" name="AssignTask">
+    <region xmi:type="uml:Region" xmi:id="_UWO3wE7vEeigxNVUNE6FFg" name="else">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_m_TeIE8PEeigxNVUNE6FFg">
+        <body>Zkwatch events are external events.The UNASSIGNED_TASKS event is an internal event.
+All the external events must be executed before any internal event.If the framework process Zkwatch before the UNASSIGNED_TASK 
+then all the events would be silently ignored. </body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_nM0LIE8OEeigxNVUNE6FFg" source="_w_BhgE8NEeigxNVUNE6FFg" target="_lT8lAE8OEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_ogpKgE8OEeigxNVUNE6FFg" name="else" source="_lT8lAE8OEeigxNVUNE6FFg" target="_y9ziYE8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pYqXoE8OEeigxNVUNE6FFg" name="I_HAVE_TASK/store_state(I_HAVE_TASK)" source="_y9ziYE8NEeigxNVUNE6FFg" target="_zpXn4E8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tfcm0E8OEeigxNVUNE6FFg" name="empty" source="_lT8lAE8OEeigxNVUNE6FFg" target="_4Gy1cE8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_02r6IE8OEeigxNVUNE6FFg" name="zkWatch(Assign_Watch).ChildEvent" source="_4Gy1cE8NEeigxNVUNE6FFg" target="_w_BhgE8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_50yy4E8OEeigxNVUNE6FFg" name="ZkException.NoNode" source="_y9ziYE8NEeigxNVUNE6FFg" target="_w_BhgE8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Y0bT0E8PEeigxNVUNE6FFg" source="_UYt9gE8PEeigxNVUNE6FFg" target="_w_BhgE8NEeigxNVUNE6FFg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_i7sewE8PEeigxNVUNE6FFg" name="DONE" source="_zpXn4E8NEeigxNVUNE6FFg" target="_e0s0ME8PEeigxNVUNE6FFg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_w_BhgE8NEeigxNVUNE6FFg" name="checking_unassigned_task"/>
+      <subvertex xmi:type="uml:State" xmi:id="_y9ziYE8NEeigxNVUNE6FFg" name="self-assigning task"/>
+      <subvertex xmi:type="uml:State" xmi:id="_zpXn4E8NEeigxNVUNE6FFg" name="exiting queue"/>
+      <subvertex xmi:type="uml:State" xmi:id="_1fHokE8NEeigxNVUNE6FFg" name="State4"/>
+      <subvertex xmi:type="uml:State" xmi:id="_4Gy1cE8NEeigxNVUNE6FFg" name="waiting assign-watch"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_lT8lAE8OEeigxNVUNE6FFg" name="u_list" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_UYt9gE8PEeigxNVUNE6FFg" name="Start"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_e0s0ME8PEeigxNVUNE6FFg"/>
+    </region>
+  </packagedElement>
+</uml:Model>
